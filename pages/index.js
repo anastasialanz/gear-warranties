@@ -11,7 +11,8 @@ export default function Home({ companies }) {
       </Head>
 
       <main>
-        <h1 className="title">Gear Warranties</h1>
+        <h1 className="title">Outdoor Gear Warranties</h1>
+        <p>Do you have gear that is in need of repair or has a defect? See below for which outdoor brands offer Lifetime or Limited warranties.</p>
         <ul className="companies-container">
           {companies.map((company) => (
             <CompanyCard
@@ -46,6 +47,7 @@ export default function Home({ companies }) {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          margin: 0 1rem;
         }
 
         footer {
@@ -72,6 +74,7 @@ export default function Home({ companies }) {
           line-height: 1.15;
           font-size: 4rem;
           text-align: center;
+          margin-bottom: 1rem;
         }
 
         .companies-container {
@@ -79,7 +82,7 @@ export default function Home({ companies }) {
           flex-flow: column;
           justify-content: space-between;
           max-width: 64rem;
-          margin: 0 auto;
+          margin: 2rem auto;
           padding: 0;
           gap: 1.5rem;
         }
