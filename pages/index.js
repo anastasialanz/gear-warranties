@@ -6,7 +6,7 @@ export default function Home({ companies }) {
   return (
     <div className="container">
       <Head>
-        <title>Gear Warranties</title>
+        <title>Gear Warranty Info</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -15,6 +15,7 @@ export default function Home({ companies }) {
         <ul className="companies-container">
           {companies.map((company) => (
             <CompanyCard
+              key={company._id}
               name={company.name}
               website={company.website}
               warrantyDescription={company.warrantyDescription}

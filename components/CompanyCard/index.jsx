@@ -10,7 +10,6 @@ export default function CompanyCard({
       <h4>Warranty</h4>
       <p>{warrantyDescription}</p>
       <a href={warrantyUrl}>Warranty details</a>
-      <h4>Returns</h4>
       <style jsx>{`
         .company-card {
           border: 1px solid #231E1E;
